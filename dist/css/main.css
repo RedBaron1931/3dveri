@@ -1,0 +1,71 @@
+.zamer_class {
+  background-image: url("../img/img_fon.jpg");
+  min-height: 860px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.zamer_class .flex_container {
+  display: flex;
+  justify-content: center;
+}
+
+.zamer_class .flex_container .flex_element {
+  display: flex;
+  flex-direction: column;
+}
+
+.zamer_class .flex_container .flex_element .element_text_centre {
+  justify-content: center;
+  display: flex;
+}
+
+.zamer_class .flex_container .flex_element .element_text_centre h4 {
+  display: flex;
+  color: #fff;
+  font-size: 56px;
+}
+
+.zamer_class .flex_container .flex_element .left_element {
+  flex-direction: column;
+  display: flex;
+}
+
+.zamer_class .flex_container .flex_element .left_element h3 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.zamer_class .flex_container .flex_element .left_element p {
+  width: 527px;
+  height: 147px;
+  color: #a2a2a2;
+  font-size: 15px;
+}
+
+.zamer_class .flex_container .contact_form {
+  justify-content: flex-end;
+  flex-direction: column;
+  display: flex;
+  padding-top: 10px;
+}
+
+.zamer_class .flex_container .contact_form input {
+  background-color: rgba(78, 78, 78, 0.9);
+  font-size: 16px;
+  line-height: 44px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  border: 1px solid #878e5e;
+  color: #878e5e;
+}
+
+.zamer_class .flex_container .contact_form .box_big input {
+  background-color: rgba(78, 78, 78, 0.9);
+  height: 104px;
+  width: 455px;
+  font-size: 16px;
+}
+

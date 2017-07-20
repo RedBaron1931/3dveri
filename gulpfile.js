@@ -2,13 +2,14 @@ var gulp = require('gulp'),
     sass= require('gulp-sass'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
-    uglifyjs = require('gulp-uglifyjs')
+    uglifyjs = require('gulp-uglifyjs'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
     del = require('del'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
-    cache = require('gulp-cache');
+    cache = require('gulp-cache'),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('img', function(){
 	return gulp.src('app/img/**/*')
@@ -20,9 +21,6 @@ gulp.task('img', function(){
 				})))
 		.pipe(gulp.dest('dist/img'))
 });
-
-
-
 gulp.task('clean', function(){
 	return del.sync('dist')
 });
@@ -35,7 +33,8 @@ gulp.task('sass', function(){
 });
 
 gulp.task('scripts', function(){
-	return gulp.src('')
+	return gulp.src(['app/libs/owl-carousel/owl-carousel/owl.carousel',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup'])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglifyjs())
 		.pipe(gulp.dest('app/js'))
